@@ -43,9 +43,9 @@ public class MahasiswaBerprestasi06 {
             if (cari == listMhs[mid].ipk) {
                 return (mid);
             } else if (listMhs[mid].ipk > cari) {
-                return findBinarySearch(cari, left, mid - 1);
-            } else {
                 return findBinarySearch(cari, mid + 1, right);
+            } else {
+                return findBinarySearch(cari, left, mid - 1);
             }
         }
         return -1;
